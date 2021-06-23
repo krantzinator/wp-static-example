@@ -4,8 +4,7 @@ project = "nginx-project"
 
 app "web" {
   build {
-    use "docker" {
-    }
+    use "docker" {}
   }
 
   deploy {
