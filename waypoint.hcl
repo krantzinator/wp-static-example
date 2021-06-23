@@ -17,3 +17,7 @@ app "web" {
 variable "hello" {
   default = "none"
 }
+
+variable "none" {
+  default = "other"
+}
