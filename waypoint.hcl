@@ -13,10 +13,10 @@ app "web" {
   }
 }
 
-variable "hello" {
+variable "sun" {
   default = "none"
 }
 
-variable "none" {
+variable "pen" {
   default = "other"
 }
