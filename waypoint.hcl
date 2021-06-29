@@ -5,6 +5,13 @@ project = "nginx-project"
 app "web" {
   build {
     use "docker" {}
+    registry {
+      use "docker" {
+        image = var.image
+        tag   = var.tag
+        local = var.local
+      }
+    }
   }
 
   deploy {
@@ -13,10 +20,14 @@ app "web" {
   }
 }
 
-variable "sun" {
-  default = "none"
+variable "image" {
+  default = "default"
 }
 
-variable "pen" {
-  default = "other"
+variable "tag" {
+  default = null
+}
+
+variable "local" {
+  default = true
 }
